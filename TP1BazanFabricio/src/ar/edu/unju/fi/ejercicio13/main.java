@@ -18,7 +18,7 @@ public class main {
 		
 		for(int j=0; j<8;j++)
 			System.out.print(arreglo[j]+"  ");
-
+		sc.close();
 	}
 
 }

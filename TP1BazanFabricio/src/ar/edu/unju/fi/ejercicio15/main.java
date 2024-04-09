@@ -25,6 +25,7 @@ public class main {
 		
 		for(int j=0;j<n;j++)
 			System.out.println("El nombre en la posicion "+j+" es: "+arreglo[j]);
+		sc.close();
 	}
 
 }

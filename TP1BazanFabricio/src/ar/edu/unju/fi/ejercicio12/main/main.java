@@ -23,6 +23,7 @@ public class main {
 		p.setNombre(nombre);
 		p.setFechaNac(fechaNac);
 		p.mostrarDatos();
+		sc.close();
 	}
 
 }

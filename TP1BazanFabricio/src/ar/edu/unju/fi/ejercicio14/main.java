@@ -28,7 +28,7 @@ public class main {
 			System.out.println("El numero de la posicion "+j+" es: "+arreglo[j]);
 		
 		System.out.println("La suma total de los "+n+" numeros es: "+suma);
-		
+		sc.close();
 	}
 
 }
