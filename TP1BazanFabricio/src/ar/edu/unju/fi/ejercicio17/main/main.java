@@ -425,6 +425,5 @@ public class main {
 	    {}
 	}
 	
-	/*Si tengo unArrayList de Objetos, de la clase Jugador... con sus nombres y apellidos... Como debo hacer para eliminar a uno, buscandolo por esos atributos? en Java*/
 	
 }
