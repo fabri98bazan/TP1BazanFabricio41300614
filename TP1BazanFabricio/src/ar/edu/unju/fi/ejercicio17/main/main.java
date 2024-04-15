@@ -71,6 +71,10 @@ public class main {
 		System.out.print("Fin del programa");
 	}
 	
+	/**
+	 * Maneja excepcion de numeros enteros
+	 * @return
+	 */
 	public static int manejarExcepcionIngresoNumEntero() {
 		boolean band=false;
 		int n=0;
@@ -92,6 +96,10 @@ public class main {
 		return n;
 	}
 	
+	/**
+	 * Maneja excepciones con numeros reales
+	 * @return
+	 */
 	public static Float manejarExcepcionIngresoNumFloat() {
 		boolean band=false;
 		Float n=(float) 0.0;
@@ -113,6 +121,10 @@ public class main {
 		return n;
 	}
 	
+	/**
+	 * Solo muestre el menu principal
+	 */
+	
 	public static void mostrarMenu() {
 		System.out.println("1) Alta a jugador");
 		System.out.println("2) Mostrar datos del jugador");
@@ -126,6 +138,10 @@ public class main {
 	}
 
 	
+	/**
+	 * Maneja el control de que la cadena de caracteres no vuelva vacía
+	 * @return
+	 */
 	
 	public static String controlIngresoPalabra() {
 		boolean band=false;
@@ -140,6 +156,11 @@ public class main {
 		return nombre;
 	}
 	
+	/**
+	 *  Valida el año de nacimiento
+	 * @return
+	 */
+	
 	public static int validarFechaAño() {
 		int a=0;
 		do
@@ -149,6 +170,10 @@ public class main {
 		return a;
 	}
 	
+	/**
+	 *  Valida el mes
+	 * @return
+	 */
 	public static int validarFechaMes() {
 		int a=0;
 		do
@@ -157,6 +182,12 @@ public class main {
 		
 		return a;
 	}
+	
+	/**
+	 * Valida el dia basandose en el mes nacido
+	 * @param mes
+	 * @return
+	 */
 	
 	public static int validarFechaDia(int mes) {
 		int a=0;
@@ -183,6 +214,11 @@ public class main {
 		return a;
 	}
 	
+	/**
+	 *  valida el ingreso de estatura
+	 * @return
+	 */
+	
 	public static Float ingresarEstatura() {
 		Float estatura;
 		do
@@ -191,6 +227,10 @@ public class main {
 		return estatura;
 	}
 	
+	/**
+	 *  Valida el ingresp de peso
+	 * @return
+	 */
 	public static Float ingresarPeso() {
 		Float peso;
 		do
@@ -199,6 +239,10 @@ public class main {
 		return peso;
 	}
 	
+	/**
+	 * Genera un nuevo jugador
+	 * @return
+	 */
 	public static Jugador generarJugador() {
 		System.out.println("**DAR DE ALTA A UN JUGADOR**");
 		Jugador j=new Jugador();
@@ -256,6 +300,11 @@ public class main {
 		return j;
 	}
 	
+	/**
+	 * muestra los datos del jugador
+	 * @param jugadores
+	 */
+	
 	public static void mostrarJugador(ArrayList<Jugador> jugadores) {
 		  System.out.println("**MOSTRAR DATOS DE UN JUGADOR**");
 	        boolean encontrado = false;
@@ -280,6 +329,10 @@ public class main {
 	        }
 	}
 	
+	/**
+	 * Muestra los jugadores ordenados por apellido
+	 * @param jugadores
+	 */
 	
 	public static void mostrarJugadoresOrdenadosPorApellido(ArrayList<Jugador> jugadores) {
         // Crear un comparador para ordenar por apellido
@@ -301,6 +354,11 @@ public class main {
             jugador.mostrarDatos();
         }
     }
+	
+	/**
+	 * modifica los datos de un jugador
+	 * @param jugadores
+	 */
 	
 	public static void modificarJugador(ArrayList<Jugador> jugadores) {
 		 System.out.println("**MODIFICAR DATOS DE UN JUGADOR**");
@@ -368,6 +426,10 @@ public class main {
 	    }
 	}
 	
+	/**
+	 * Eliminar jugadores
+	 * @param jugadores
+	 */
 	public static void eliminarJugador(ArrayList<Jugador> jugadores)
 	{
 		 System.out.println("**ELIMINAR UN JUGADOR**");
@@ -391,6 +453,11 @@ public class main {
 	     }
 	}
 	
+	/**
+	 * Mostrar cantidad de jugadores
+	 * @param jugadores
+	 */
+	
 	public static void mostrarCantidaddejugadores(ArrayList<Jugador> jugadores)
 	{
 		int i=0;
@@ -398,6 +465,11 @@ public class main {
 			i++;
 		System.out.println("CANTIDAD DE JUGADORES EN TOTAL: "+i);
 	}
+	
+	/**
+	 * mostrar Cantidad de jugadores de una Nacionalidad
+	 * @param jugadores
+	 */
 
 	public static void mostrarCantidaddejugadoresNacionalidad(ArrayList<Jugador> jugadores)
 	{

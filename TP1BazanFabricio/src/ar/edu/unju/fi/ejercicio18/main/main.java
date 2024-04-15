@@ -80,6 +80,9 @@ public class main {
 		}while(opc!=9);
 	}
 	
+	/**
+	 * Muestra el menu principal
+	 */
 	public static void mostrarMenu() {
 		System.out.println("1) Alta de destino turístico");
 		System.out.println("2) Mostrar todos los destinos turisticos");
@@ -92,6 +95,11 @@ public class main {
 		System.out.println("9) Salir");
 		System.out.print("\nIngrese opcion: ");
 	}
+	
+	/**
+	 * Manejar excepcion de numeros  enteros
+	 * @return
+	 */
 	
 	public static int manejarExcepcionIngresoNumEntero() {
 		boolean band=false;
@@ -114,6 +122,10 @@ public class main {
 		return n;
 	}
 	
+	/**
+	 * Manejar excepcion de numeros reales
+	 * @return
+	 */
 	public static double manejarExcepcionIngresoNumReal() {
 		boolean band=false;
 		double n=0;
@@ -135,6 +147,10 @@ public class main {
 		return n;
 	}
 	
+	/**
+	 * Manejar que la cadena de caracteres no vuelva vacia
+	 * @return
+	 */
 	
 	public static String controlIngresoPalabra() {
 		boolean band=false;
@@ -149,6 +165,10 @@ public class main {
 		return nombre;
 	}
 	
+	/**
+	 * Manejar el control de cantidad ingresada
+	 * @return
+	 */
 	public static Integer controlCantidad()
 	{
 		Integer cant=0;
@@ -157,6 +177,11 @@ public class main {
 		while(cant<0 || cant>50);
 		return cant;
 	}
+	
+	/**
+	 *  Precarga los paises
+	 * @param paises
+	 */
 	
 	public static void cargarPaises(ArrayList<Pais> paises)
 	{
@@ -176,6 +201,10 @@ public class main {
 		paises.add(p7);
 	}
 	
+	/**
+	 *  Muestra paises
+	 * @param paises
+	 */
 	public static void mostrarPaises(ArrayList<Pais> paises)
 	{
 		for(Pais pais:paises)
@@ -184,6 +213,10 @@ public class main {
 		}
 	}
 	
+	/**
+	 * Muestra destinos 
+	 * @param destinos
+	 */
 	public static void mostrarDestinos(ArrayList<DestinoTuristico> destinos)
 	{
 		int i=1;
@@ -195,6 +228,11 @@ public class main {
 		}
 	}
 	
+	/**
+	 * Controla el ingreso de numeros reales
+	 * @return
+	 */
+	
 	public static double controlIngresoPrecio()
 	{
 		double precio=0;
@@ -204,6 +242,11 @@ public class main {
 		return precio;
 	}
 	
+	/**
+	 * Genera un nuevo destino turístico
+	 * @param paises
+	 * @return
+	 */
 	public static DestinoTuristico generarDestino(ArrayList<Pais> paises)
 	{
 		System.out.println("***SECCION DE ALTA DESTINO***");
@@ -244,6 +287,10 @@ public class main {
 		return n_destino;
 	}
 	
+	/**
+	 * Modifica un pais del destino
+	 * @param destinos
+	 */
 	public static void modificarPaisDestino(ArrayList<DestinoTuristico> destinos)
 	{
 		System.out.println("**SECCION DE MODIFIACION DE PAIS**");
@@ -270,12 +317,20 @@ public class main {
 			System.out.println("No se encontró destino");
 	}
 	
+	/**
+	 * Limpia el ArrayList de destinos
+	 * @param destinos
+	 */
 	public static void limpiarDestinos(ArrayList<DestinoTuristico> destinos)
 	{
 		System.out.println("*****DESTINOS LIMPIOS*****");
 		destinos.clear();
 	}
 	
+	/**
+	 * Elimina un destino
+	 * @param destinos
+	 */
 	public static void eliminarUnDestino(ArrayList<DestinoTuristico> destinos)
 	{
 		System.out.println("**SECCION DE ELIMINACION DE PAIS**");
@@ -315,6 +370,11 @@ public class main {
             dest.mostrarDatosDestino();
         }
     }
+	
+	/**
+	 * Mostrar Lista de los Destinos 
+	 * @param destinos
+	 */
 	
 	public static void mostrarListaDestinosPorPais(ArrayList<DestinoTuristico> destinos)
 	{
